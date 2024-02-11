@@ -17,6 +17,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'gradient-start': '#FF8938',
+                        'gradient-end': '#F00',
                     }
                 }
             }
@@ -38,9 +40,9 @@
 </head>
 
 <body class="font-manrope">
-    <header class="mx-auto">
-        <div class="hero">
-            <div class="hero-content flex-col lg:flex-row">
+    <header class="container mx-auto">
+        <div class="my-20">
+            <div class="flex justify-between items-center flex-col lg:flex-row">
                 <div>
                     <h1 class="text-7xl font-extrabold">
                         It's good <br>
@@ -48,10 +50,13 @@
                         Tea House</h1>
                     <p class="py-6">Tea and Botanical Solutions Supplier
                         Give Optimum Satisfaction To Your Taste Buds</p>
-                    <button class="btn btn-primary">Explore More</button>
+                    <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">
+                        Explore More
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                    </button>
                 </div>
                 <div>
-                    <img src="images/banner.png" class="max-w-sm" />
+                    <img src="images/banner.png" />
                     <!-- rating badge -->
                     <div class="-mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60">
                         <i class="fa-solid fa-star text-3xl text-amber-400"></i>
@@ -142,7 +147,7 @@
         </section>
 
         <!-- Super client Section -->
-        <section class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
+        <section class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-24">
             <div class="flex items-center lg:pr-28">
                 <div class="space-y-5 ">
                     <h2 class="text-5xl font-extrabold text-white">
@@ -155,7 +160,7 @@
                         randomised words which don't look even slightly
                         believable
                     </p>
-                    <button class="btn btn-primary">Show All</button>
+                    <button class="btn bg-white">Show All</button>
                 </div>
             </div>
 
@@ -203,9 +208,53 @@
             </div>
         </section>
     </main>
-    <footer>
-
-    </footer>
-</body>
+    <footer class="px-4 lg:px-48 py-10 bg-base-200 text-base-content">
+        <div class="flex justify-between my-24">
+            <img src="images/cup.png" alt="">
+            <p>
+                <span>Ready to get started?</span>
+                <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end">Get started</button>
+            </p>
+        </div>
+        <div class="footer">
+            <nav>
+                <h6 class="footer-title">Services</h6> 
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+              </nav> 
+              <nav>
+                <h6 class="footer-title">Company</h6> 
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+              </nav> 
+              <nav>
+                <h6 class="footer-title">Legal</h6> 
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+              </nav> 
+              <form>
+                <h6 class="footer-title">Newsletter</h6> 
+                <fieldset class="form-control w-80">
+                  <label class="label">
+                    <span class="label-text">Enter your email address</span>
+                  </label> 
+                  <div class="relative">
+                    <input type="text" placeholder="username@site.com" class="py-4 bg-transparent border-b-2 border-black outline-none" /> 
+                    <button class="btn absolute top-0 right-0 rounded-full text-white bg-gradient-to-r from-gradient-start to-gradient-end">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                  </div>
+                </fieldset>
+              </form>
+        </div>
+        <aside class="mt-10 text-center">
+            <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+          </aside>
+      </footer>
 
 </html>
